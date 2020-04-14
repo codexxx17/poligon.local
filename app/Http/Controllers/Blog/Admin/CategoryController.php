@@ -6,19 +6,32 @@ use App\Http\Requests\BlogCategoryUpdateRequest;
 use App\Http\Requests\BlogCategoryCreateRequest;
 use App\Models\BlogCategory;
 use App\Repositories\BlogCategoryRepository;
+use Illuminate\Http\Response;
 
 
 class CategoryController extends BaseController
 {
     /**
+     * @var BlogCategoryRepository
+     */
+    private $blogCategoryRepository;
+
+    public function __construct()
+    {
+        parent::__construct();
+        $this->blogCategoryRepository = app(BlogCategoryRepository::class);
+    }
+
+    /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\Response|\Illuminate\View\View
+     * @return \Illuminate\Contracts\View\Factory|Response|\Illuminate\View\View
      */
     public function index()
     {
 
-        $paginator = BlogCategory::paginate(15);
+        //$paginator = BlogCategory::paginate(15);
+        $paginator = $this->blogCategoryRepository->getAllWithPaginate(5);
 
         return view('blog.admin.categories.index', compact('paginator'));
     }
@@ -26,13 +39,14 @@ class CategoryController extends BaseController
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\Response|\Illuminate\View\View
+     * @return \Illuminate\Contracts\View\Factory|Response|\Illuminate\View\View
      */
     public function create()
     {
-        //dd(__METHOD__);
         $item = new BlogCategory();
-        $categoryList = BlogCategory::all();
+        $categoryList
+            = $this->blogCategoryRepository->getForComboBox();
+
         return view('blog.admin.categories.edit',
         compact('item', 'categoryList'));
     }
@@ -57,10 +71,12 @@ class CategoryController extends BaseController
         $item = (new BlogCategory())->create($data);
 
         if($item){
-            return redirect()->route('blog.admin.categories.edit', [$item->id])
+            return redirect()
+                ->route('blog.admin.categories.edit', [$item->id])
                 ->with(['success' => 'Успешно сохранено']);
         }   else {
-            return back()->withErrors(['msg' => 'Ошибка сохранения'])
+            return back()
+                ->withErrors(['msg' => 'Ошибка сохранения'])
                 ->withInput();
         }
 
@@ -69,7 +85,7 @@ class CategoryController extends BaseController
      * Display the specified resource.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function show($id)
     {
@@ -135,7 +151,7 @@ class CategoryController extends BaseController
      * Remove the specified resource from storage.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function destroy($id)
     {
