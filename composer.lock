@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f19716d5e9e20b214aa4498cddf6c9b0",
+    "content-hash": "2dd9d267736cbdf791130d1fb64a8abc",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -4586,6 +4586,55 @@
                 "symfony"
             ],
             "time": "2019-03-07T21:35:13+00:00"
+        },
+        {
+            "name": "ozankurt/repoist",
+            "version": "3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OzanKurt/Repoist.git",
+                "reference": "045c993ad60705fa98b07adedf4abb473ecb3daa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OzanKurt/Repoist/zipball/045c993ad60705fa98b07adedf4abb473ecb3daa",
+                "reference": "045c993ad60705fa98b07adedf4abb473ecb3daa",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^5.6|^6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Kurt\\Repoist\\RepoistServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Kurt\\Repoist\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ozan Kurt",
+                    "email": "hello@ozankurt.com"
+                }
+            ],
+            "description": "Laravel ^5.6 repository generator.",
+            "keywords": [
+                "database",
+                "laravel",
+                "repoist",
+                "repository"
+            ],
+            "time": "2019-09-19T09:07:06+00:00"
         },
         {
             "name": "phar-io/manifest",
