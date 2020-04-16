@@ -1,7 +1,7 @@
 <?php
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
-
+use Illuminate\Support\Str;
 use Faker\Generator as Faker;
 
 $factory->define(App\Models\BlogPost::class, function (Faker $faker){
@@ -13,7 +13,7 @@ $factory->define(App\Models\BlogPost::class, function (Faker $faker){
     $data = [
         'category_id'       => rand(1, 11),
         'user_id'           => (rand(1, 5) == 5) ? 1 : 2,
-        'slug'              => str_slug($title),
+        'slug'              => Str::slug($title),
         'title'             => $title,
         'excerpt'            => $faker->text(rand(40,100)),
         'content_raw'       => $txt,
