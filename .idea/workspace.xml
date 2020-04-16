@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f5b32e6e-ad1a-4521-bd74-8339b92b9de1" name="Default Changelist" comment="31 complete lesson, перенос логики запросов в репозитории, исправление сидов на отображение номера категорий корректно">
+    <list default="true" id="f5b32e6e-ad1a-4521-bd74-8339b92b9de1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/BaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/BaseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/BlogCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/BlogCategory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_04_07_160935_create_blog_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_04_07_160935_create_blog_posts_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/BlogCategoriesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/BlogCategoriesTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/blog/admin/categories/includes/item_edit_main_col.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/admin/categories/includes/item_edit_main_col.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/route.txt" beforeDir="false" afterPath="$PROJECT_DIR$/route.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +35,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="KEEP" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -143,7 +142,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1aDJc2pkjR42LhghA11rGP0row3" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -152,11 +153,12 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Repositories" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\poligon.local\app\Repositories" />
       <recent name="C:\OSPanel\domains\poligon.local\app\Http\Controllers\Blog\Admin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -197,7 +199,9 @@
       <workItem from="1586776317418" duration="1208000" />
       <workItem from="1586847219104" duration="7553000" />
       <workItem from="1586858779865" duration="1000" />
-      <workItem from="1586862908828" duration="7319000" />
+      <workItem from="1586862908828" duration="13497000" />
+      <workItem from="1586881336305" duration="1583000" />
+      <workItem from="1587035435503" duration="2130000" />
     </task>
     <task id="LOCAL-00001" summary="24 complete lesson, add category, update-&gt;upgrade">
       <created>1586702142170</created>
@@ -213,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586858374743</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="31 complete lesson, перенос логики запросов в репозитории, исправление сидов на отображение номера категорий корректно">
+      <created>1586870827300</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1586870827300</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,7 +235,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -233,7 +246,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="24 complete lesson, add category, update-&gt;upgrade" />
     <MESSAGE value="29 complete lesson, создание репозитория для категорий" />
-    <option name="LAST_COMMIT_MESSAGE" value="29 complete lesson, создание репозитория для категорий" />
+    <MESSAGE value="31 complete lesson, перенос логики запросов в репозитории, исправление сидов на отображение номера категорий корректно" />
+    <option name="LAST_COMMIT_MESSAGE" value="31 complete lesson, перенос логики запросов в репозитории, исправление сидов на отображение номера категорий корректно" />
   </component>
   <component name="WindowStateProjectService">
     <state x="392" y="238" key="#Inspections" timestamp="1586701266403">
@@ -244,22 +258,38 @@
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
     <state x="392" y="238" key="#Updates/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1586539686042" />
-    <state x="-6" y="13" width="1546" height="1090" key="CommitChangelistDialog2" timestamp="1586870814033">
+    <state x="-6" y="13" width="1546" height="1090" key="CommitChangelistDialog2" timestamp="1586870826893">
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
-    <state x="-6" y="13" width="1546" height="1090" key="CommitChangelistDialog2/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1586870814033" />
-    <state x="119" y="75" key="DiffContextDialog" timestamp="1586857708672">
+    <state x="-6" y="13" width="1546" height="1090" key="CommitChangelistDialog2/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1586870826893" />
+    <state x="119" y="75" width="1280" height="957" key="DiffContextDialog" timestamp="1586881500774">
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
-    <state x="119" y="75" key="DiffContextDialog/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1586857708672" />
+    <state x="119" y="75" width="1280" height="957" key="DiffContextDialog/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1586881500774" />
     <state x="580" y="334" key="FileChooserDialogImpl" timestamp="1586690665502">
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
     <state x="580" y="334" key="FileChooserDialogImpl/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1586690665502" />
+    <state x="520" y="394" key="NewPhpClassDialog" timestamp="1586874888495">
+      <screen x="0" y="0" width="1600" height="1160" />
+    </state>
+    <state x="520" y="394" key="NewPhpClassDialog/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1586874888495" />
+    <state x="635" y="503" key="NewPhpFileDialog" timestamp="1586879009715">
+      <screen x="0" y="0" width="1600" height="1160" />
+    </state>
+    <state x="635" y="503" key="NewPhpFileDialog/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1586879009715" />
+    <state x="622" y="290" key="RollbackChangesDialog" timestamp="1586881365353">
+      <screen x="0" y="0" width="1600" height="1160" />
+    </state>
+    <state x="622" y="290" key="RollbackChangesDialog/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1586881365352" />
     <state x="301" y="222" key="SettingsEditor" timestamp="1586692702649">
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
     <state x="301" y="222" key="SettingsEditor/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1586692702649" />
+    <state x="392" y="312" key="Vcs.Push.Dialog.v2" timestamp="1586870870383">
+      <screen x="0" y="0" width="1600" height="1160" />
+    </state>
+    <state x="392" y="312" key="Vcs.Push.Dialog.v2/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1586870870383" />
     <state x="497" y="178" width="606" height="804" key="find.popup" timestamp="1586851529340">
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
