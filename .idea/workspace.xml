@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f5b32e6e-ad1a-4521-bd74-8339b92b9de1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/BaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/BaseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/route.txt" beforeDir="false" afterPath="$PROJECT_DIR$/route.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/BlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/BlogPost.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +198,7 @@
       <workItem from="1586858779865" duration="1000" />
       <workItem from="1586862908828" duration="13497000" />
       <workItem from="1586881336305" duration="1583000" />
-      <workItem from="1587035435503" duration="2130000" />
+      <workItem from="1587035435503" duration="6217000" />
     </task>
     <task id="LOCAL-00001" summary="24 complete lesson, add category, update-&gt;upgrade">
       <created>1586702142170</created>
@@ -224,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586870827300</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="32 complete lesson, Подготовка для управления статьями блога">
+      <created>1587037602248</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1587037602248</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,7 +251,8 @@
     <MESSAGE value="24 complete lesson, add category, update-&gt;upgrade" />
     <MESSAGE value="29 complete lesson, создание репозитория для категорий" />
     <MESSAGE value="31 complete lesson, перенос логики запросов в репозитории, исправление сидов на отображение номера категорий корректно" />
-    <option name="LAST_COMMIT_MESSAGE" value="31 complete lesson, перенос логики запросов в репозитории, исправление сидов на отображение номера категорий корректно" />
+    <MESSAGE value="32 complete lesson, Подготовка для управления статьями блога" />
+    <option name="LAST_COMMIT_MESSAGE" value="32 complete lesson, Подготовка для управления статьями блога" />
   </component>
   <component name="WindowStateProjectService">
     <state x="392" y="238" key="#Inspections" timestamp="1586701266403">
@@ -258,10 +263,10 @@
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
     <state x="392" y="238" key="#Updates/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1586539686042" />
-    <state x="-6" y="13" width="1546" height="1090" key="CommitChangelistDialog2" timestamp="1586870826893">
+    <state x="-6" y="13" width="1546" height="1090" key="CommitChangelistDialog2" timestamp="1587037601868">
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
-    <state x="-6" y="13" width="1546" height="1090" key="CommitChangelistDialog2/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1586870826893" />
+    <state x="-6" y="13" width="1546" height="1090" key="CommitChangelistDialog2/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1587037601868" />
     <state x="119" y="75" width="1280" height="957" key="DiffContextDialog" timestamp="1586881500774">
       <screen x="0" y="0" width="1600" height="1160" />
     </state>

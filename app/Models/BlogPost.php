@@ -7,5 +7,11 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class BlogPost extends Model
 {
-    //use SoftDeletes;
+    use SoftDeletes;
+
+    /*protected $dates
+        = [
+            'published_at',
+        ];*/
+
 }
