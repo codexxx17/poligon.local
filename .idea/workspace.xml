@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5b32e6e-ad1a-4521-bd74-8339b92b9de1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/result_messages.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/BlogPostFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/BlogPostFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_04_07_160700_create_blog_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_04_07_160700_create_blog_categories_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_04_07_160935_create_blog_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_04_07_160935_create_blog_posts_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/BlogCategoriesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/BlogCategoriesTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/BlogPostRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/BlogPostRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +203,8 @@
       <workItem from="1586862908828" duration="13497000" />
       <workItem from="1586881336305" duration="1583000" />
       <workItem from="1587035435503" duration="7827000" />
-      <workItem from="1587044537541" duration="8906000" />
+      <workItem from="1587044537541" duration="9933000" />
+      <workItem from="1587110943767" duration="3591000" />
     </task>
     <task id="LOCAL-00001" summary="24 complete lesson, add category, update-&gt;upgrade">
       <created>1586702142170</created>
@@ -249,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587052126576</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="37 complete lesson, Added all need files 5.7-&gt;5.8 all fixed">
+      <created>1587062044696</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1587062044696</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,7 +281,8 @@
     <MESSAGE value="32 complete lesson, Подготовка для управления статьями блога" />
     <MESSAGE value="32 complete lesson, Вывод всех статей блога" />
     <MESSAGE value="34 complete lesson, Added all need files Отношения Eloqment:Relationships первые шаги" />
-    <option name="LAST_COMMIT_MESSAGE" value="34 complete lesson, Added all need files Отношения Eloqment:Relationships первые шаги" />
+    <MESSAGE value="37 complete lesson, Added all need files 5.7-&gt;5.8 all fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="37 complete lesson, Added all need files 5.7-&gt;5.8 all fixed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="392" y="238" key="#Inspections" timestamp="1586701266403">
@@ -286,10 +293,10 @@
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
     <state x="392" y="238" key="#Updates/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1586539686042" />
-    <state x="-6" y="13" width="1546" height="1090" key="CommitChangelistDialog2" timestamp="1587061969016">
+    <state x="-6" y="13" width="1546" height="1090" key="CommitChangelistDialog2" timestamp="1587062044333">
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
-    <state x="-6" y="13" width="1546" height="1090" key="CommitChangelistDialog2/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1587061969016" />
+    <state x="-6" y="13" width="1546" height="1090" key="CommitChangelistDialog2/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1587062044333" />
     <state x="119" y="75" width="1280" height="957" key="DiffContextDialog" timestamp="1586881500774">
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
@@ -314,10 +321,10 @@
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
     <state x="301" y="222" key="SettingsEditor/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1586692702649" />
-    <state x="392" y="312" key="Vcs.Push.Dialog.v2" timestamp="1587062014805">
+    <state x="392" y="312" key="Vcs.Push.Dialog.v2" timestamp="1587062060428">
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
-    <state x="392" y="312" key="Vcs.Push.Dialog.v2/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1587062014805" />
+    <state x="392" y="312" key="Vcs.Push.Dialog.v2/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1587062060428" />
     <state x="609" y="496" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587051985641">
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
