@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5b32e6e-ad1a-4521-bd74-8339b92b9de1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/result_messages.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/post_edit_add_col.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/post_edit_main_col.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/BlogPostRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/BlogPostRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog/admin/posts/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/edit.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +204,8 @@
       <workItem from="1586881336305" duration="1583000" />
       <workItem from="1587035435503" duration="7827000" />
       <workItem from="1587044537541" duration="9933000" />
-      <workItem from="1587110943767" duration="3591000" />
+      <workItem from="1587110943767" duration="7141000" />
+      <workItem from="1587191687706" duration="6096000" />
     </task>
     <task id="LOCAL-00001" summary="24 complete lesson, add category, update-&gt;upgrade">
       <created>1586702142170</created>
@@ -255,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587062044696</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="38 complete lesson, Страница редактирования статьи блога 1/2">
+      <created>1587115304160</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1587115304160</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,7 +290,8 @@
     <MESSAGE value="32 complete lesson, Вывод всех статей блога" />
     <MESSAGE value="34 complete lesson, Added all need files Отношения Eloqment:Relationships первые шаги" />
     <MESSAGE value="37 complete lesson, Added all need files 5.7-&gt;5.8 all fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="37 complete lesson, Added all need files 5.7-&gt;5.8 all fixed" />
+    <MESSAGE value="38 complete lesson, Страница редактирования статьи блога 1/2" />
+    <option name="LAST_COMMIT_MESSAGE" value="38 complete lesson, Страница редактирования статьи блога 1/2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="392" y="238" key="#Inspections" timestamp="1586701266403">
@@ -293,10 +302,14 @@
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
     <state x="392" y="238" key="#Updates/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1586539686042" />
-    <state x="-6" y="13" width="1546" height="1090" key="CommitChangelistDialog2" timestamp="1587062044333">
+    <state x="521" y="382" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587115477432">
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
-    <state x="-6" y="13" width="1546" height="1090" key="CommitChangelistDialog2/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1587062044333" />
+    <state x="521" y="382" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1587115477432" />
+    <state x="-6" y="13" width="1546" height="1090" key="CommitChangelistDialog2" timestamp="1587115303737">
+      <screen x="0" y="0" width="1600" height="1160" />
+    </state>
+    <state x="-6" y="13" width="1546" height="1090" key="CommitChangelistDialog2/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1587115303737" />
     <state x="119" y="75" width="1280" height="957" key="DiffContextDialog" timestamp="1586881500774">
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
@@ -333,5 +346,9 @@
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
     <state x="497" y="178" width="606" height="804" key="find.popup/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1586851529340" />
+    <state x="463" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1587192958562">
+      <screen x="0" y="0" width="1600" height="1160" />
+    </state>
+    <state x="463" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1587192958562" />
   </component>
 </project>
