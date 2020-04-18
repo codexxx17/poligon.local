@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5b32e6e-ad1a-4521-bd74-8339b92b9de1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/post_edit_add_col.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/includes/post_edit_main_col.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/blog/admin/posts/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/edit.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +201,7 @@
       <workItem from="1587035435503" duration="7827000" />
       <workItem from="1587044537541" duration="9933000" />
       <workItem from="1587110943767" duration="7141000" />
-      <workItem from="1587191687706" duration="6096000" />
+      <workItem from="1587191687706" duration="6474000" />
     </task>
     <task id="LOCAL-00001" summary="24 complete lesson, add category, update-&gt;upgrade">
       <created>1586702142170</created>
@@ -263,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587115304160</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="39 complete lesson, Страница редактирования статьи блога 2/2">
+      <created>1587207029906</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1587207029906</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,7 +294,8 @@
     <MESSAGE value="34 complete lesson, Added all need files Отношения Eloqment:Relationships первые шаги" />
     <MESSAGE value="37 complete lesson, Added all need files 5.7-&gt;5.8 all fixed" />
     <MESSAGE value="38 complete lesson, Страница редактирования статьи блога 1/2" />
-    <option name="LAST_COMMIT_MESSAGE" value="38 complete lesson, Страница редактирования статьи блога 1/2" />
+    <MESSAGE value="39 complete lesson, Страница редактирования статьи блога 2/2" />
+    <option name="LAST_COMMIT_MESSAGE" value="39 complete lesson, Страница редактирования статьи блога 2/2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="392" y="238" key="#Inspections" timestamp="1586701266403">
@@ -306,14 +310,14 @@
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
     <state x="521" y="382" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1587115477432" />
-    <state x="-6" y="13" width="1546" height="1090" key="CommitChangelistDialog2" timestamp="1587115303737">
+    <state x="-6" y="13" width="1546" height="1090" key="CommitChangelistDialog2" timestamp="1587207029477">
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
-    <state x="-6" y="13" width="1546" height="1090" key="CommitChangelistDialog2/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1587115303737" />
-    <state x="119" y="75" width="1280" height="957" key="DiffContextDialog" timestamp="1586881500774">
+    <state x="-6" y="13" width="1546" height="1090" key="CommitChangelistDialog2/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1587207029477" />
+    <state x="119" y="75" width="1280" height="957" key="DiffContextDialog" timestamp="1587207020048">
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
-    <state x="119" y="75" width="1280" height="957" key="DiffContextDialog/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1586881500774" />
+    <state x="119" y="75" width="1280" height="957" key="DiffContextDialog/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1587207020048" />
     <state x="580" y="334" key="FileChooserDialogImpl" timestamp="1586690665502">
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
@@ -334,10 +338,10 @@
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
     <state x="301" y="222" key="SettingsEditor/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1586692702649" />
-    <state x="392" y="312" key="Vcs.Push.Dialog.v2" timestamp="1587062060428">
+    <state x="392" y="312" key="Vcs.Push.Dialog.v2" timestamp="1587207055657">
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
-    <state x="392" y="312" key="Vcs.Push.Dialog.v2/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1587062060428" />
+    <state x="392" y="312" key="Vcs.Push.Dialog.v2/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1587207055657" />
     <state x="609" y="496" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587051985641">
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
