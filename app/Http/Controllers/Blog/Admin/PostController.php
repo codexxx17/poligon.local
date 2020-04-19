@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Blog\Admin;
 use App\Repositories\BlogCategoryRepository;
 use App\Repositories\BlogPostRepository;
 use App\Http\Requests\BlogPostUpdateRequest;
-use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 /**
@@ -99,7 +98,6 @@ class PostController extends BaseController
      */
     public function update(BlogPostUpdateRequest $request, $id)
     {
-        //dd(__METHOD__, $request->all(), $id);
         $item = $this->blogPostRepository->getEdit($id);
         if (empty($item)) {
             return back()
@@ -107,13 +105,17 @@ class PostController extends BaseController
                 ->withInput();
             }
             $data = $request->all();
+        /*
+         * //Ушло в обсервер
             if (empty($data['slug'])) {
                 $data['slug'] = \Str::slug($data['title']);
             }
             if (empty($item->published_at) && $data['is_published']) {
                 $data['published_at'] = Carbon::now();
-            }
+            }*/
+
             $result = $item->update($data);
+
             if ($result) {
                 return redirect()
                     ->route('blog.admin.posts.edit', $item->id)
