@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f5b32e6e-ad1a-4521-bd74-8339b92b9de1" name="Default Changelist" comment="">
+    <list default="true" id="f5b32e6e-ad1a-4521-bd74-8339b92b9de1" name="Default Changelist" comment="41 complete lesson, добавление и настройка Observer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Observers/BlogCategoryObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Observers/BlogCategoryObserver.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,9 +13,7 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -146,7 +144,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -156,13 +153,13 @@
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\OSPanel\domains\poligon.local\app\Models" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\OSPanel\domains\poligon.local\app\Http\Requests" />
       <recent name="C:\OSPanel\domains\poligon.local\app\Repositories" />
       <recent name="C:\OSPanel\domains\poligon.local\app\Http\Controllers\Blog\Admin" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\poligon.local\app\Models" />
     </key>
   </component>
   <component name="RunManager">
@@ -205,7 +202,8 @@
       <workItem from="1587044537541" duration="9933000" />
       <workItem from="1587110943767" duration="7141000" />
       <workItem from="1587191687706" duration="6474000" />
-      <workItem from="1587284548148" duration="7793000" />
+      <workItem from="1587284548148" duration="8298000" />
+      <workItem from="1587293816672" duration="1033000" />
     </task>
     <task id="LOCAL-00001" summary="24 complete lesson, add category, update-&gt;upgrade">
       <created>1586702142170</created>
@@ -277,24 +275,30 @@
       <option name="project" value="LOCAL" />
       <updated>1587289105474</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="41 complete lesson, добавление и настройка Observer">
+      <created>1587293490574</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1587293490574</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="24 complete lesson, add category, update-&gt;upgrade" />
@@ -307,7 +311,8 @@
     <MESSAGE value="38 complete lesson, Страница редактирования статьи блога 1/2" />
     <MESSAGE value="39 complete lesson, Страница редактирования статьи блога 2/2" />
     <MESSAGE value="40 complete lesson, Обновление статьи блога" />
-    <option name="LAST_COMMIT_MESSAGE" value="40 complete lesson, Обновление статьи блога" />
+    <MESSAGE value="41 complete lesson, добавление и настройка Observer" />
+    <option name="LAST_COMMIT_MESSAGE" value="41 complete lesson, добавление и настройка Observer" />
   </component>
   <component name="WindowStateProjectService">
     <state x="392" y="238" key="#Inspections" timestamp="1587292656062">
@@ -322,14 +327,18 @@
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
     <state x="521" y="382" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1587115477432" />
-    <state x="-6" y="13" width="1546" height="1090" key="CommitChangelistDialog2" timestamp="1587289105095">
+    <state x="480" y="315" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1587293728259">
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
-    <state x="-6" y="13" width="1546" height="1090" key="CommitChangelistDialog2/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1587289105095" />
-    <state x="119" y="75" width="1280" height="957" key="DiffContextDialog" timestamp="1587207020048">
+    <state x="480" y="315" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1587293728259" />
+    <state x="-6" y="13" width="1546" height="1090" key="CommitChangelistDialog2" timestamp="1587294656934">
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
-    <state x="119" y="75" width="1280" height="957" key="DiffContextDialog/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1587207020048" />
+    <state x="-6" y="13" width="1546" height="1090" key="CommitChangelistDialog2/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1587294656934" />
+    <state x="119" y="75" width="1280" height="957" key="DiffContextDialog" timestamp="1587293424402">
+      <screen x="0" y="0" width="1600" height="1160" />
+    </state>
+    <state x="119" y="75" width="1280" height="957" key="DiffContextDialog/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1587293424402" />
     <state x="580" y="334" key="FileChooserDialogImpl" timestamp="1586690665502">
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
@@ -350,10 +359,10 @@
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
     <state x="301" y="222" key="SettingsEditor/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1586692702649" />
-    <state x="392" y="312" key="Vcs.Push.Dialog.v2" timestamp="1587289117751">
+    <state x="392" y="312" key="Vcs.Push.Dialog.v2" timestamp="1587293498230">
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
-    <state x="392" y="312" key="Vcs.Push.Dialog.v2/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1587289117751" />
+    <state x="392" y="312" key="Vcs.Push.Dialog.v2/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1587293498230" />
     <state x="609" y="496" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587051985641">
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
@@ -362,9 +371,9 @@
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
     <state x="497" y="178" width="606" height="804" key="find.popup/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1586851529340" />
-    <state x="463" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1587284869970">
+    <state x="463" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1587294446861">
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
-    <state x="463" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1587284869970" />
+    <state x="463" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1587294446861" />
   </component>
 </project>
