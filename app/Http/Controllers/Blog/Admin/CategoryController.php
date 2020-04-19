@@ -21,7 +21,6 @@ class CategoryController extends BaseController
         parent::__construct();
         $this->blogCategoryRepository = app(BlogCategoryRepository::class);
     }
-
     /**
      * Display a listing of the resource.
      *
@@ -35,7 +34,6 @@ class CategoryController extends BaseController
 
         return view('blog.admin.categories.index', compact('paginator'));
     }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -50,7 +48,6 @@ class CategoryController extends BaseController
         return view('blog.admin.categories.edit',
         compact('item', 'categoryList'));
     }
-
     /**
      * Store a newly created resource in storage.
      *
@@ -60,10 +57,7 @@ class CategoryController extends BaseController
     public function store(BlogCategoryCreateRequest $request)
     {
         $data = $request->input();
-        /*//Ушло в обсервер
-        if (empty($data['slug'])){
-            $data['slug'] = \Str::slug($data['title']);
-        }*/
+
     //   Создаст объект и добавит в БД
         $item = (new BlogCategory())->create($data);
 
@@ -76,7 +70,6 @@ class CategoryController extends BaseController
                 ->withErrors(['msg' => 'Ошибка сохранения'])
                 ->withInput();
         }
-
     }
     /**
      * Display the specified resource.
@@ -88,7 +81,6 @@ class CategoryController extends BaseController
     {
         dd(__METHOD__);
     }
-
     /**
      * Show the form for editing the specified resource.
      *
@@ -110,7 +102,6 @@ class CategoryController extends BaseController
         return view('blog.admin.categories.edit',
             compact('item', 'categoryList'));
     }
-
     /**
      * Update the specified resource in storage.
      *
@@ -128,10 +119,6 @@ class CategoryController extends BaseController
         }
 
         $data = $request->all();
-        /*//Ушло в обсервер
-         * if (empty($data['slug'])){
-            $data['slug'] = str_slug($data['title']);
-        }*/
         $result = $item->update($data);
 
         if ($result) {
@@ -144,7 +131,6 @@ class CategoryController extends BaseController
                 ->withInput();
         }
     }
-
     /**
      * Remove the specified resource from storage.
      *

@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers\Blog\Admin;
 
+use App\Models\BlogPost;
 use App\Repositories\BlogCategoryRepository;
 use App\Repositories\BlogPostRepository;
 use App\Http\Requests\BlogPostUpdateRequest;
-use Illuminate\Http\Request;
+use App\Http\Requests\BlogPostCreateRequest;
 
 /**
  * Управление статьями блога
@@ -41,22 +42,35 @@ class PostController extends BaseController
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function create()
     {
-        dd(__METHOD__);
+        $item = new BlogPost();
+        $categoryList
+            = $this->blogCategoryRepository->getForComboBox();
+
+        return view('blog.admin.posts.edit', compact('item', 'categoryList'));
     }
 
     /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
-    public function store(Request $request)
+    public function store(BlogPostCreateRequest $request)
     {
-        //
+        $data = $request->input();
+        $item = (new BlogPost())->create($data);
+
+        if ($item) {
+            return redirect()->route('blog.admin.posts.edit', [$item->id])
+                             ->with(['success' => 'Успешно сохранено']);
+        }   else {
+            return back()->withErrors(['msg' => 'Ошибка сохранения'])
+                         ->withInput();
+        }
     }
 
     /**
@@ -105,14 +119,6 @@ class PostController extends BaseController
                 ->withInput();
             }
             $data = $request->all();
-        /*
-         * //Ушло в обсервер
-            if (empty($data['slug'])) {
-                $data['slug'] = \Str::slug($data['title']);
-            }
-            if (empty($item->published_at) && $data['is_published']) {
-                $data['published_at'] = Carbon::now();
-            }*/
 
             $result = $item->update($data);
 
@@ -126,7 +132,6 @@ class PostController extends BaseController
                     ->withInput();
             }
         }
-
     /**
      * Remove the specified resource from storage.
      *

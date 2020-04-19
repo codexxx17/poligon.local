@@ -25,6 +25,8 @@ class BlogPost extends Model
 {
     use SoftDeletes;
 
+    const UNKNOWN_USER = 1;
+
     protected $fillable
         = [
             'title',
@@ -34,8 +36,11 @@ class BlogPost extends Model
             'content_raw',
             'is_published',
             'published_at',
-            'user_id',
         ];
+    /**
+     * @var int|mixed|string
+     */
+    private $user_id;
 
     /**Категория статьи
      * @return BelongsTo
