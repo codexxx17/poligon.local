@@ -21,8 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f5b32e6e-ad1a-4521-bd74-8339b92b9de1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/BlogCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/BlogCategory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Blog/Admin/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Observers/BlogPostObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Observers/BlogPostObserver.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog/admin/posts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/admin/posts/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +227,7 @@
       <workItem from="1587295505617" duration="1000" />
       <workItem from="1587295530534" duration="455000" />
       <workItem from="1587296010336" duration="10027000" />
-      <workItem from="1587370937919" duration="5526000" />
+      <workItem from="1587370937919" duration="8097000" />
     </task>
     <task id="LOCAL-00001" summary="24 complete lesson, add category, update-&gt;upgrade">
       <created>1586702142170</created>
@@ -326,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587374792079</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="46 complete lesson, Знакомство с Аксессором и мутатором">
+      <created>1587378271714</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1587378271714</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,7 +367,8 @@
     <MESSAGE value="42 complete lesson, настройка Observer для категорий" />
     <MESSAGE value="44 complete lesson, Создание новой статьи, исправление BlogPostObserver.php *creating*" />
     <MESSAGE value="45 complete lesson, Связь с родительской категорией" />
-    <option name="LAST_COMMIT_MESSAGE" value="45 complete lesson, Связь с родительской категорией" />
+    <MESSAGE value="46 complete lesson, Знакомство с Аксессором и мутатором" />
+    <option name="LAST_COMMIT_MESSAGE" value="46 complete lesson, Знакомство с Аксессором и мутатором" />
   </component>
   <component name="WindowStateProjectService">
     <state x="392" y="238" key="#Inspections" timestamp="1587292656062">
@@ -378,10 +387,10 @@
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
     <state x="480" y="315" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1587293728259" />
-    <state x="-6" y="13" width="1546" height="1090" key="CommitChangelistDialog2" timestamp="1587374791585">
+    <state x="-6" y="13" width="1546" height="1090" key="CommitChangelistDialog2" timestamp="1587378271344">
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
-    <state x="-6" y="13" width="1546" height="1090" key="CommitChangelistDialog2/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1587374791585" />
+    <state x="-6" y="13" width="1546" height="1090" key="CommitChangelistDialog2/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1587378271344" />
     <state x="119" y="75" width="1280" height="957" key="DiffContextDialog" timestamp="1587311186996">
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
@@ -406,10 +415,10 @@
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
     <state x="301" y="222" key="SettingsEditor/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1587295984993" />
-    <state x="392" y="312" key="Vcs.Push.Dialog.v2" timestamp="1587374798940">
+    <state x="392" y="312" key="Vcs.Push.Dialog.v2" timestamp="1587378275855">
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
-    <state x="392" y="312" key="Vcs.Push.Dialog.v2/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1587374798940" />
+    <state x="392" y="312" key="Vcs.Push.Dialog.v2/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1587378275855" />
     <state x="609" y="496" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587051985641">
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
@@ -422,9 +431,9 @@
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
     <state x="456" y="270" key="run.anything.popup/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1587374355206" />
-    <state x="463" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1587294446861">
+    <state x="463" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1587378837335">
       <screen x="0" y="0" width="1600" height="1160" />
     </state>
-    <state x="463" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1587294446861" />
+    <state x="463" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1600.1160/1600.0.1600.860@0.0.1600.1160" timestamp="1587378837335" />
   </component>
 </project>
