@@ -90,10 +90,23 @@ class CategoryController extends BaseController
      */
     public function edit($id, BlogCategoryRepository $categoryRepository)
     {
-        //$item = BlogCategory::findOrFail($id);
-        //$categoryList = BlogCategory::all()
-
         $item = $categoryRepository->getEdit($id);
+
+        $v['title_before'] = $item->title;
+
+        //$item->title = 'ASDasdasdaSD asdssd 1212';
+
+        $v['title_after'] = $item->title;
+        $v['getAttribute'] = $item->getAttribute('title');
+        $v['attributesToArray'] = $item->attributesToArray();
+        $v['attributes'] = $item->attributes['title'];
+        $v['getAttributeValue'] = $item->getAttributeValue('title');
+        $v['getMutatedAttribute'] = $item->getMutatedAttributes();
+        $v['hasGetMutator for title'] = $item->hasGetMutator('title');
+        $v['toArray'] = $item->toArray();
+
+        //dd($v, $item);
+
         if (empty($item)) {
             abort(404);
         }
